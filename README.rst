@@ -1,21 +1,21 @@
 dserver Notification Plugin
 ===========================
 
-.. |dtool| image:: https://github.com/livMatS/dserver-notification-plugin/blob/main/icons/22x22/dtool_logo.png?raw=True
+.. |dtool| image:: https://github.com/jic-dtool/dserver-notification-plugin/blob/main/icons/22x22/dtool_logo.png?raw=True
     :height: 20px
-    :target: https://github.com/livMatS/dserver-notification-plugin
+    :target: https://github.com/jic-dtool/dserver-notification-plugin
 .. |pypi| image:: https://img.shields.io/pypi/v/dserver-notification-plugin
     :target: https://pypi.org/project/dserver-notification-plugin/
-.. |tag| image:: https://img.shields.io/github/v/tag/livMatS/dserver-notification-plugin
-    :target: https://github.com/livMatS/dserver-notification-plugin/tags
-.. |test| image:: https://img.shields.io/github/actions/workflow/status/livMatS/dserver-notification-plugin/test.yml?branch=main&label=tests
-    :target: https://github.com/livMatS/dserver-notification-plugin/actions/workflows/test.yml
+.. |tag| image:: https://img.shields.io/github/v/tag/jic-dtool/dserver-notification-plugin
+    :target: https://github.com/jic-dtool/dserver-notification-plugin/tags
+.. |test| image:: https://img.shields.io/github/actions/workflow/status/jic-dtool/dserver-notification-plugin/test.yml?branch=main&label=tests
+    :target: https://github.com/jic-dtool/dserver-notification-plugin/actions/workflows/test.yml
 .. |zenodo| image:: https://zenodo.org/badge/365692008.svg
     :target: https://zenodo.org/doi/10.5281/zenodo.12702039
 
 |dtool| |pypi| |tag| |test| |zenodo|
 
-- GitHub: https://github.com/livMatS/dserver-notification-plugin
+- GitHub: https://github.com/jic-dtool/dserver-notification-plugin
 - PyPI: https://pypi.python.org/pypi/dserver-notification-plugin
 - Free software: MIT License
 

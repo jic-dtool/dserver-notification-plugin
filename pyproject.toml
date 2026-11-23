@@ -30,8 +30,8 @@ test = [
 
 [project.urls]
 Documentation = "https://dserver-notification-plugin.readthedocs.io"
-Repository = "https://github.com/livMatS/dserver-notification-plugin"
-Changelog = "https://github.com/livMatS/dserver-notification-plugin/blob/main/CHANGELOG.rst"
+Repository = "https://github.com/jic-dtool/dserver-notification-plugin"
+Changelog = "https://github.com/jic-dtool/dserver-notification-plugin/blob/main/CHANGELOG.rst"
 
 [project.entry-points."dservercore.extension"]
 NotificationExtension = "dserver_notification_plugin:NotificationExtension"
