@@ -10,7 +10,7 @@ jobs:
       matrix:
         # dservercore (main) requires Python >= 3.10
         python-version: ['3.10', '3.11', '3.12', '3.13']
-        mongodb-version: ['4.2', '4.4', '5.0', '6.0']
+        mongodb-version: ['4.4', '5.0', '6.0']
         dservercore-version: [main]
         dserver-search-plugin-mongo-version: [main]
         dserver-retrieve-plugin-mongo-version: [main]
