@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-A plugin for [dservercore](https://github.com/livMatS/dservercore) (the dtool lookup server). It exposes a single unauthenticated webhook, `POST /webhook/notify`, that receives **S3 event notifications** from an S3-compatible storage backend (minio, NetApp StorageGRID, AWS S3) and keeps the lookup server's dataset index in sync: registering/updating datasets on object-created events and deregistering them on object-removed events.
+A plugin for [dservercore](https://github.com/jic-dtool/dservercore) (the dtool lookup server). It exposes a single unauthenticated webhook, `POST /webhook/notify`, that receives **S3 event notifications** from an S3-compatible storage backend (minio, NetApp StorageGRID, AWS S3) and keeps the lookup server's dataset index in sync: registering/updating datasets on object-created events and deregistering them on object-removed events.
 
 The plugin is discovered by dservercore via the `dservercore.extension` entry point (see `pyproject.toml`), which points at `NotificationExtension`. Everything lives in a single module, `dserver_notification_plugin/__init__.py`, plus `config.py`.
 
