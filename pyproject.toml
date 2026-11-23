@@ -1,6 +1,6 @@
 [build-system]
-requires = ["flit_scm"]
-build-backend = "flit_scm:buildapi"
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
 
 [project]
 name = "dserver-notification-plugin"
@@ -36,13 +36,18 @@ Changelog = "https://github.com/livMatS/dserver-notification-plugin/blob/main/CH
 [project.entry-points."dservercore.extension"]
 NotificationExtension = "dserver_notification_plugin:NotificationExtension"
 
-[tool.flit.module]
-name = "dserver_notification_plugin"
+[tool.hatch.version]
+source = "vcs"
+raw-options = { version_scheme = "guess-next-dev", local_scheme = "no-local-version" }
 
-[tool.setuptools_scm]
-version_scheme = "guess-next-dev"
-local_scheme = "no-local-version"
-write_to = "dserver_notification_plugin/version.py"
+[tool.hatch.build.hooks.vcs]
+version-file = "dserver_notification_plugin/version.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["dserver_notification_plugin"]
+
+[tool.hatch.build.targets.sdist]
+exclude = [".github", ".pre-commit-config.yaml", "CLAUDE.md"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

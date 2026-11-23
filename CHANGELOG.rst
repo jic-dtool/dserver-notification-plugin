@@ -1,6 +1,12 @@
 Change log for dserver-notification-plugin
 ==========================================
 
+Unreleased
+----------
+
+* Build system changed from ``setuptools`` to ``hatchling`` with ``hatch-vcs``;
+  the version is still derived from git tags
+
 0.4.3 (20Nov24)
 ---------------
 
