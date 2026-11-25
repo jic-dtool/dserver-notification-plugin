@@ -58,8 +58,8 @@ The request lifecycle in `__init__.py` is the thing to understand before editing
 
 ## Conventions specific to this repo
 
-- **Versioning** is via `setuptools_scm` / `flit_scm` from git tags — there is no hardcoded version; `dserver_notification_plugin/version.py` is generated (write_to) and gitignored. Don't edit it.
-- **Build backend is flit** (`flit_scm:buildapi`), recently migrated from setuptools.
+- **Versioning** is via `hatch-vcs` from git tags — there is no hardcoded version; `dserver_notification_plugin/version.py` is generated (version-file) and gitignored. Don't edit it.
+- **Build backend is hatchling** (`hatchling.build`) with `hatch-vcs`, recently migrated from setuptools.
 - The README documents end-to-end webhook setup for **minio** (`mc admin config set ... notify_webhook`) and **NetApp StorageGRID** (SNS endpoint + `NotificationConfiguration` XML). Keep it in sync when changing event handling or the route.
 - `doc/sample_requests/` contains real captured request logs (webhook + elasticsearch variants) — useful reference payloads when reasoning about event shapes.
 - `tests/data/1a1f9fad-...` is a real on-disk dtool dataset fixture; `tests/data/mock_event.json` is the sample S3 event used by `request_json`.
